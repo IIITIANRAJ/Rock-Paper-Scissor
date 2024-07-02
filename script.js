@@ -47,5 +47,9 @@ buttons.forEach((button)=>{
         newDiv.classList.add('Computer')
         game.appendChild(newDiv)
         result.appendChild(newPara)
+        setTimeout(()=>{
+           game.removeChild(newDiv)
+           result.removeChild(newPara)
+        },2000)
     })
 })
