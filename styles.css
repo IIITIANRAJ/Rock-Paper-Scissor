@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: aqua;
+}
+.nbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    background-color: black;
+    color: white;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ROCK{
+    background-color: rgba(165, 42, 42, 0.679);
+}
+#PAPER{
+    background-color: rgba(255, 235, 205, 0.954);
+}
+#SCISSOR{
+    background-color: rgba(0, 81, 255, 0.846);
+}
+.Computer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    color: black;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+@media (max-width:500px){
+    .nbar{
+        height:50px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .icons{
+        gap: 30px;
+        padding: 10px;
+    }
+    .buttons{
+        height: 80px;
+        width: 80px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .result{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .Computer{
+        height: 80px;
+        width: 80px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
